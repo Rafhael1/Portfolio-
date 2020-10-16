@@ -22,6 +22,10 @@ app.get("/pt", function(req, res){
   res.render("homept");   
 });
 
+app.get('/es', function(req, res){
+  res.render('homees')
+})
+
 ////////////////////////////////
 
 
