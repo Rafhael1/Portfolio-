@@ -1,0 +1,80 @@
+nav {
+  font-size: 21px !important;
+}
+
+.pt {
+  background-image: linear-gradient(109.6deg, #ca004e 16%, #ff912b 91.1%) !important;
+}
+
+.en {
+  background-image: linear-gradient(109.6deg, #10163b 16%, #272f49 91.1%) !important;
+}
+
+.es {
+  background-image: linear-gradient(109.6deg, #ff932e 16%, #ffaf64 91.1%) !important;
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 23px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.right-bar {
+  text-align: right !important;
+  margin-right: 15px !important;
+}
+
+#es nav .brazil-flag {
+  opacity: 50%;
+}
+#es nav .brazil-flag:hover {
+  opacity: 75%;
+}
+#es nav .spain-flag {
+  height: 30px !important;
+  width: 40px !important;
+}
+#es nav .usa-flag {
+  opacity: 50%;
+}
+#es nav .usa-flag:hover {
+  opacity: 75%;
+}
+
+#pt nav .spain-flag {
+  opacity: 50%;
+}
+#pt nav .spain-flag:hover {
+  opacity: 75%;
+}
+#pt nav .brazil-flag {
+  height: 30px !important;
+  width: 40px !important;
+}
+#pt nav .usa-flag {
+  opacity: 50%;
+}
+#pt nav .usa-flag:hover {
+  opacity: 75%;
+}
+
+#en nav .spain-flag {
+  opacity: 50%;
+}
+#en nav .spain-flag:hover {
+  opacity: 75%;
+}
+#en nav .usa-flag {
+  height: 30px !important;
+  width: 40px !important;
+}
+#en nav .brazil-flag {
+  opacity: 50%;
+}
+#en nav .brazil-flag:hover {
+  opacity: 75%;
+}

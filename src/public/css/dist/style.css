@@ -31,20 +31,16 @@ nav {
 #es nav .brazil-flag {
   opacity: 50%;
 }
-
 #es nav .brazil-flag:hover {
   opacity: 75%;
 }
-
 #es nav .spain-flag {
   height: 30px !important;
   width: 40px !important;
 }
-
 #es nav .usa-flag {
   opacity: 50%;
 }
-
 #es nav .usa-flag:hover {
   opacity: 75%;
 }
@@ -52,20 +48,16 @@ nav {
 #pt nav .spain-flag {
   opacity: 50%;
 }
-
 #pt nav .spain-flag:hover {
   opacity: 75%;
 }
-
 #pt nav .brazil-flag {
   height: 30px !important;
   width: 40px !important;
 }
-
 #pt nav .usa-flag {
   opacity: 50%;
 }
-
 #pt nav .usa-flag:hover {
   opacity: 75%;
 }
@@ -73,20 +65,16 @@ nav {
 #en nav .spain-flag {
   opacity: 50%;
 }
-
 #en nav .spain-flag:hover {
   opacity: 75%;
 }
-
 #en nav .usa-flag {
   height: 30px !important;
   width: 40px !important;
 }
-
 #en nav .brazil-flag {
   opacity: 50%;
 }
-
 #en nav .brazil-flag:hover {
   opacity: 75%;
 }
@@ -95,26 +83,25 @@ nav {
   .titlePT {
     font-size: 27px !important;
   }
+
   .titleEN {
     font-size: 27px !important;
   }
+
   .titleES {
     font-size: 27px !important;
   }
 }
-
 .titlePT {
   padding: 15px !important;
   margin: 15px !important;
   font-size: 50px;
   border-radius: 40px;
-  -webkit-box-shadow: 0px 3px 7px #1f1f1f;
-          box-shadow: 0px 3px 7px #1f1f1f;
+  box-shadow: 0px 3px 7px #1f1f1f;
   position: relative !important;
   text-align: center !important;
   display: block !important;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: azure;
   text-shadow: 2px 2px 8px #000000;
   background-image: linear-gradient(109.6deg, #ca004e 16%, #ff912b 91.1%);
@@ -125,13 +112,11 @@ nav {
   margin: 15px !important;
   font-size: 50px;
   border-radius: 40px;
-  -webkit-box-shadow: 0px 3px 7px #1f1f1f;
-          box-shadow: 0px 3px 7px #1f1f1f;
+  box-shadow: 0px 3px 7px #1f1f1f;
   position: relative !important;
   text-align: center !important;
   display: block !important;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: azure;
   text-shadow: 2px 2px 8px #000000;
   background-image: linear-gradient(109.6deg, #152e52 16%, #2f325c 91.1%);
@@ -142,13 +127,11 @@ nav {
   margin: 15px !important;
   font-size: 50px;
   border-radius: 40px;
-  -webkit-box-shadow: 0px 3px 7px #1f1f1f;
-          box-shadow: 0px 3px 7px #1f1f1f;
+  box-shadow: 0px 3px 7px #1f1f1f;
   position: relative !important;
   text-align: center !important;
   display: block !important;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: azure;
   text-shadow: 2px 2px 8px #000000;
   background-image: linear-gradient(109.6deg, #ff8725 16%, #ffc64a 91.1%);
@@ -173,6 +156,7 @@ header {
   header h2 {
     font-size: 34px !important;
   }
+
   body {
     overflow-x: hidden;
   }
@@ -181,30 +165,24 @@ header {
     text-align: center;
   }
 }
-
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
   overflow-x: hidden;
 }
-
 body p {
   font-size: 25px;
 }
-
 body a {
   color: #006fd6;
 }
-
 body a:hover {
   color: #003c8a;
 }
-
 body nav {
-  -webkit-transition: top 0.4s !important;
   transition: top 0.4s !important;
 }
 
@@ -215,8 +193,7 @@ main {
   padding-bottom: 15px;
   border-radius: 40px;
   margin-bottom: 15px;
-  -webkit-box-shadow: 0px 0px 12px #1a1a1a;
-          box-shadow: 0px 0px 12px #1a1a1a;
+  box-shadow: 0px 0px 12px #1a1a1a;
 }
 
 header {
@@ -230,11 +207,9 @@ header {
   background-size: cover;
   background-position: center;
 }
-
 header h1 {
   font-size: 90px;
 }
-
 header h2 {
   font-size: 50px;
 }
@@ -243,23 +218,17 @@ header h2 {
   height: 20px;
   width: 30px;
   margin-right: 10px !important;
-  -webkit-box-shadow: 0px 0px 6px 1px #1f1f1f;
-          box-shadow: 0px 0px 6px 1px #1f1f1f;
+  box-shadow: 0px 0px 6px 1px #1f1f1f;
 }
-
 .flags .flags:hover {
   opacity: 80%;
 }
 
 .stack-in-cards {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   list-style-type: none;
   margin: 4px -35px;
 }
-
 .stack-in-cards li {
   margin: auto 5px;
 }
-/*# sourceMappingURL=style.css.map */

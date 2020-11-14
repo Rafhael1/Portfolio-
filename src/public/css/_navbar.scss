@@ -2,6 +2,14 @@ $pt-background-color: linear-gradient( 109.6deg,  rgb(202, 0, 78) 16%, rgb(255, 
 $es-background-color: linear-gradient( 109.6deg,  rgb(255, 147, 46) 16%, rgb(255, 175, 100) 91.1% );
 $en-background-color: linear-gradient( 109.6deg,  rgb(16, 22, 59) 16%, rgb(39, 47, 73) 91.1% );
 
+
+nav {
+    font-size: 21px !important;
+}
+
+///////////////////////////////////////////////////////////
+//////////////////////Language related//////////////////// 
+////////////////////////////////////////////////////////// 
 .pt {    
         background-image: $pt-background-color !important;     
 }
@@ -12,4 +20,93 @@ $en-background-color: linear-gradient( 109.6deg,  rgb(16, 22, 59) 16%, rgb(39, 4
 
 .es {
     background-image: $es-background-color !important;     
+}
+
+ ///////////////////////////////////////////////////////////
+//////////////////////NAV//////////////////////////////////
+////////////////////////////////////////////////////////// 
+.nav-link {
+    color: rgb(255, 255, 255) !important;
+    font-size: 23px;
+}
+.nav-link:hover {
+    text-decoration: underline;
+}
+.right-bar {
+    text-align: right !important;
+    margin-right: 15px !important;
+
+}
+
+ ///////////////////////////////////////////////////////////
+//////////////////////   FLAGS   //////////////////////////
+////////////////////////////////////////////////////////// 
+
+#es {
+    nav {
+        .brazil-flag{
+            opacity: 50%;
+            }
+            .brazil-flag:hover {
+                opacity: 75%;
+            }
+            /////////////////////////////////
+            .spain-flag {
+                height: 30px !important;
+                width: 40px !important;
+            }
+            ////////////////////////////////
+            .usa-flag {
+                opacity: 50%;
+            }
+            .usa-flag:hover {
+                opacity: 75%;
+            }
+    }
+}
+
+ #pt {
+    nav {
+        .spain-flag{
+            opacity: 50%;
+            }
+            .spain-flag:hover{
+                opacity: 75%;
+            }
+            //////////////////////////////
+            .brazil-flag {
+                height: 30px !important;
+                width: 40px !important;
+            }
+            /////////////////////////////
+            .usa-flag {
+                opacity: 50%;
+            }
+            .usa-flag:hover{
+                opacity: 75%;
+            }
+    }
+}
+
+#en {
+    nav {
+        .spain-flag{
+            opacity: 50%;
+            }
+            .spain-flag:hover{
+                opacity: 75%;
+            }
+            /////////////////////////////
+            .usa-flag {
+                height: 30px !important;
+                width: 40px !important;
+            }
+            /////////////////////////////
+            .brazil-flag {
+                opacity: 50%;
+            }
+            .brazil-flag:hover{
+                opacity: 75%;
+            }
+    }
 }
