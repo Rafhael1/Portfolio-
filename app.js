@@ -8,6 +8,10 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.set("view engine", "ejs");
 
+//////////////////////////////////////
+           // GET HOME PAGES//
+/////////////////////////////////////           
+
 
 app.get('/', (req, res) => {
   res.redirect('/home');
@@ -24,6 +28,11 @@ app.get("/pt", function(req, res){
 app.get('/es', function(req, res){
   res.render('./home/homees')
 })
+
+/////////////////////////////////
+      // GET RESUME PAGES//
+/////////////////////////////////
+
 
 ////////////////////////////////
 
