@@ -4,7 +4,7 @@ html {
 body { 
   background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
   font-family: 'Roboto', sans-serif !important;
-  margin-bottom: 20px;
+  overflow-x: hidden;
 }
 
 .title {
@@ -52,7 +52,7 @@ a:hover{
   
 }
 
-#navbar {
+nav {
   transition: top 0.4s !important;
 }
 

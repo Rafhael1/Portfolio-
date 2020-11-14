@@ -15,15 +15,15 @@ app.get('/', (req, res) => {
 });
 
 app.get("/home", function(req, res){
-    res.render("home");   
+    res.render("./home/home");   
 });
 
 app.get("/pt", function(req, res){
-  res.render("homept");   
+  res.render("./home/homept");   
 });
 
 app.get('/es', function(req, res){
-  res.render('homees')
+  res.render('./home/homees')
 })
 
 ////////////////////////////////
