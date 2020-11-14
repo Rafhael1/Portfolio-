@@ -262,4 +262,11 @@ header h2 {
 .stack-in-cards li {
   margin: auto 5px;
 }
+
+.card {
+  border-radius: 40px !important;
+  border: 0px;
+  -webkit-box-shadow: 0px 0px 5px 0px #202020;
+          box-shadow: 0px 0px 5px 0px #202020;
+}
 /*# sourceMappingURL=style.css.map */
