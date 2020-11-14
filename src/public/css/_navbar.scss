@@ -1,6 +1,6 @@
-$pt-background-color: linear-gradient( 109.6deg,  rgb(202, 0, 78) 16%, rgb(255, 145, 43) 91.1% );
-$es-background-color: linear-gradient( 109.6deg,  rgb(255, 147, 46) 16%, rgb(255, 175, 100) 91.1% );
-$en-background-color: linear-gradient( 109.6deg,  rgb(16, 22, 59) 16%, rgb(39, 47, 73) 91.1% );
+$pt-background-color: linear-gradient(109.6deg, rgb(202, 0, 78) 16%, rgb(255, 145, 43) 91.1%);
+$es-background-color: linear-gradient(109.6deg, rgb(255, 147, 46) 16%, rgb(255, 175, 100) 91.1%);
+$en-background-color: linear-gradient(109.6deg, rgb(16, 22, 59) 16%, rgb(39, 47, 73) 91.1%);
 
 
 nav {
@@ -10,103 +10,165 @@ nav {
 ///////////////////////////////////////////////////////////
 //////////////////////Language related//////////////////// 
 ////////////////////////////////////////////////////////// 
-.pt {    
-        background-image: $pt-background-color !important;     
+.pt {
+    background-image: $pt-background-color !important;
 }
 
 .en {
-    background-image: $en-background-color !important;     
+    background-image: $en-background-color !important;
 }
 
 .es {
-    background-image: $es-background-color !important;     
+    background-image: $es-background-color !important;
 }
 
- ///////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
 //////////////////////NAV//////////////////////////////////
 ////////////////////////////////////////////////////////// 
 .nav-link {
     color: rgb(255, 255, 255) !important;
     font-size: 23px;
 }
-.nav-link:hover {
-    text-decoration: underline;
-}
+
 .right-bar {
     text-align: right !important;
     margin-right: 15px !important;
 
 }
 
- ///////////////////////////////////////////////////////////
+//////// NAV UNDERLINE //////////////////
+
+$duration: 1s;
+$distance: 8px;
+$easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+
+.nav-link {
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    &:before {
+        opacity: 0;
+        transform: translateY(- $distance);
+        transition: transform 0s $easeOutBack, opacity 0s;
+    }
+
+    &:after {
+        opacity: 0;
+        transform: translateY($distance/2);
+        transition: transform $duration $easeOutBack, opacity $duration;
+    }
+
+    &:hover,
+    &:focus {
+
+        &:before,
+        &:after {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        &:before {
+            transition: transform $duration $easeOutBack, opacity $duration;
+        }
+
+        &:after {
+            transition: transform 0s $duration $easeOutBack, opacity 0s $duration;
+        }
+    }
+}
+
+///////////////////////////////////////////////////////////
 //////////////////////   FLAGS   //////////////////////////
 ////////////////////////////////////////////////////////// 
 
 #es {
     nav {
-        .brazil-flag{
+        .brazil-flag {
             opacity: 50%;
-            }
-            .brazil-flag:hover {
-                opacity: 75%;
-            }
-            /////////////////////////////////
-            .spain-flag {
-                height: 30px !important;
-                width: 40px !important;
-            }
-            ////////////////////////////////
-            .usa-flag {
-                opacity: 50%;
-            }
-            .usa-flag:hover {
-                opacity: 75%;
-            }
+        }
+
+        .brazil-flag:hover {
+            opacity: 75%;
+        }
+
+        /////////////////////////////////
+        .spain-flag {
+            height: 30px !important;
+            width: 40px !important;
+        }
+
+        ////////////////////////////////
+        .usa-flag {
+            opacity: 50%;
+        }
+
+        .usa-flag:hover {
+            opacity: 75%;
+        }
     }
 }
 
- #pt {
+#pt {
     nav {
-        .spain-flag{
+        .spain-flag {
             opacity: 50%;
-            }
-            .spain-flag:hover{
-                opacity: 75%;
-            }
-            //////////////////////////////
-            .brazil-flag {
-                height: 30px !important;
-                width: 40px !important;
-            }
-            /////////////////////////////
-            .usa-flag {
-                opacity: 50%;
-            }
-            .usa-flag:hover{
-                opacity: 75%;
-            }
+        }
+
+        .spain-flag:hover {
+            opacity: 75%;
+        }
+
+        //////////////////////////////
+        .brazil-flag {
+            height: 30px !important;
+            width: 40px !important;
+        }
+
+        /////////////////////////////
+        .usa-flag {
+            opacity: 50%;
+        }
+
+        .usa-flag:hover {
+            opacity: 75%;
+        }
     }
 }
 
 #en {
     nav {
-        .spain-flag{
+        .spain-flag {
             opacity: 50%;
-            }
-            .spain-flag:hover{
-                opacity: 75%;
-            }
-            /////////////////////////////
-            .usa-flag {
-                height: 30px !important;
-                width: 40px !important;
-            }
-            /////////////////////////////
-            .brazil-flag {
-                opacity: 50%;
-            }
-            .brazil-flag:hover{
-                opacity: 75%;
-            }
+        }
+
+        .spain-flag:hover {
+            opacity: 75%;
+        }
+
+        /////////////////////////////
+        .usa-flag {
+            height: 30px !important;
+            width: 40px !important;
+        }
+
+        /////////////////////////////
+        .brazil-flag {
+            opacity: 50%;
+        }
+
+        .brazil-flag:hover {
+            opacity: 75%;
+        }
     }
 }

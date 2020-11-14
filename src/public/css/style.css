@@ -19,13 +19,65 @@ nav {
   font-size: 23px;
 }
 
-.nav-link:hover {
-  text-decoration: underline;
-}
-
 .right-bar {
   text-align: right !important;
   margin-right: 15px !important;
+}
+
+.nav-link {
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav-link:before, .nav-link:after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: white;
+}
+
+.nav-link:before {
+  opacity: 0;
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  -webkit-transition: opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+  transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.nav-link:after {
+  opacity: 0;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+  -webkit-transition: opacity 1s, -webkit-transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 1s, -webkit-transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 1s;
+  transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 1s, -webkit-transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.nav-link:hover:before, .nav-link:hover:after, .nav-link:focus:before, .nav-link:focus:after {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.nav-link:hover:before, .nav-link:focus:before {
+  -webkit-transition: opacity 1s, -webkit-transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 1s, -webkit-transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 1s;
+  transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 1s, -webkit-transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.nav-link:hover:after, .nav-link:focus:after {
+  -webkit-transition: opacity 0s 1s, -webkit-transform 0s 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 0s 1s, -webkit-transform 0s 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0s 1s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 1s;
+  transition: transform 0s 1s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 1s, -webkit-transform 0s 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 #es nav .brazil-flag {
