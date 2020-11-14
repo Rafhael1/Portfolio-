@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-const port = 3000;
 var bodyParser = require("body-parser")
 
 app.use(express.static("src/public"));
@@ -28,7 +27,7 @@ app.get('/es', function(req, res){
 
 ////////////////////////////////
 
-
+const port = process.env.PORT || 3000
 app.listen(port, function(){
     console.log(`Server has started at http://localhost:${port}`)
 })
