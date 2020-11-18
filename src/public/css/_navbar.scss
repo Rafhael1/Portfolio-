@@ -25,6 +25,16 @@ nav {
 ///////////////////////////////////////////////////////////
 //////////////////////NAV//////////////////////////////////
 ////////////////////////////////////////////////////////// 
+
+nav {
+    #home {
+        color: white !important;
+    }
+    svg:hover {
+        text-decoration: none !important;
+    }
+}
+
 .nav-link {
     color: rgb(255, 255, 255) !important;
     font-size: 23px;
@@ -35,6 +45,8 @@ nav {
     margin-right: 15px !important;
 
 }
+
+
 
 //////// NAV UNDERLINE //////////////////
 

@@ -1,7 +1,7 @@
 @import "./navbar";
 @import "./titles";
 @import "./header";
-
+@import "./footer";
 
 
 @media only screen and (max-width: 600px) 
@@ -30,7 +30,7 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Sora', sans-serif !important;
     overflow-x: hidden;
 
     p {
@@ -49,6 +49,34 @@ body {
         transition: top 0.4s !important;
     }
 }
+
+////////////////////////////////////////////////
+////////////// PP/ Privacy Policy ////////////////////
+//////////////////////////////////////////////
+
+.PP {
+    margin: 30px auto;
+    background-color: rgb(231, 231, 231);
+    border-radius: 40px;
+    h1 {
+        padding: 15px auto;
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+        padding: 10px auto;     
+    }
+
+    p {
+        margin: auto 10px;
+    }
+    footer {
+        
+    }
+}
+
+/////////////////////////////////////////////
 
 main {
     background-color: #f7f7f7 !important;

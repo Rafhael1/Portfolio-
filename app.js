@@ -35,6 +35,15 @@ app.get('/es', function(req, res){
 
 
 ////////////////////////////////
+/////////////////////////////////
+      // Privacy Policy//
+/////////////////////////////////
+
+app.get('/privacy-policy', function(req, res){
+  res.render('./privacyPolicy')
+})
+
+////////////////////////////////
 
 const port = process.env.PORT || 3000
 app.listen(port, function(){

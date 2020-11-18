@@ -1,36 +1,44 @@
-<!DOCTYPE html>
-<html lang="pt">
+<head>
+    <style>
+        body {
+            background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+        }
 
-<%- include("../partials/headerpt") %>
+        header {
+            background-image: url("backgrounds/image2.jpg") !important;
+        }
+    </style>
+</head>
 
-    <header  class=" center align-items-center justify-content-center text-center align-self-center ">
-        <h1>RAFHAEL MARQUES</h1>
-        <h2>DESENVOLVEDOR WEB</h2>
-    </header>
-    <main class="container text-left mt-4">
-        <!-- Main Content -->
-        <section>
-            <div>
-            <h1 class="titlePT">SOBRE MIM</h1>
-            <br>
-            <p class="paragraph">Eu sou um desenvolvedor web(<i>front-end</i>) do Brasil.
-              Tenho experiência no desenvolvimento de sites, desenvolvimento de aplicativos móveis multiplataforma com React Native e construção de <i>bots</i> com Python.
-              Programar não é minha única paixão, adoro estudar economia e negócios também.
-              Você pode ver todos os <i>frameworks</i> com aos quais estou familiarizado em meu <a href="#">currículo</a>. </p>  
-            </div>
-            <h1  class="titlePT">MEUS WEBSITES</h1>
-            <br>
-            <%- include("../cards/card1/cardPT")  %> 
-        </section>
-    </main>
+<div id="pt">
+    <body>
+        <%- include("../partials/header") %>
+        <%- include("../navs/navPT") %>
 
-    
+        <header class=" center align-items-center justify-content-center text-center align-self-center ">
+            <h1>RAFHAEL MARQUES</h1>
+            <h2>DESENVOLVEDOR WEB</h2>
+        </header>
+        <main class="container text-left mt-4">
+            <!-- Main Content -->
+            <section>
+                <div>
+                    <h1 class="titlePT">SOBRE MIM</h1>
+                    <br>
+                    <p class="paragraph">Eu sou um desenvolvedor web(<i>front-end</i>) do Brasil.
+                        Tenho experiência no desenvolvimento de sites, desenvolvimento de aplicativos móveis
+                        multiplataforma com React Native e construção de <i>bots</i> com Python.
+                        Programar não é minha única paixão, adoro estudar economia e negócios também.
+                        Você pode ver todos os <i>frameworks</i> com aos quais estou familiarizado em meu <a
+                            href="#">currículo</a>. </p>
+                </div>
+                <h1 class="titlePT">MEUS WEBSITES</h1>
+                <br>
+                <%- include("../cards/card1/cardPT")  %>
+            </section>
+        </main>
 
+        <%- include('../footer/footerPT')  %>
+    </body>
 
-    <footer>         <!-- Links To My Social Media -->
-
-
-    </footer>
-</body>
-
-</html>
+    </html>

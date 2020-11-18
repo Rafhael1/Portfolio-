@@ -14,6 +14,14 @@ nav {
   background-image: linear-gradient(109.6deg, #34364e 0%, #2f3069 100%) !important;
 }
 
+nav #home {
+  color: white !important;
+}
+
+nav svg:hover {
+  text-decoration: none !important;
+}
+
 .nav-link {
   color: white !important;
   font-size: 23px;
@@ -218,6 +226,64 @@ header {
   background-position: center;
 }
 
+footer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  -webkit-box-shadow: 0px 0px 4px #2b2b2b;
+          box-shadow: 0px 0px 4px #2b2b2b;
+  color: white;
+  text-shadow: 0px 0px 3px black;
+}
+
+footer div {
+  padding-bottom: 10px;
+}
+
+footer a {
+  font-size: 17px;
+  text-shadow: none !important;
+  padding: auto 15px;
+  color: #3c4170;
+}
+
+footer h4 {
+  padding-top: 20px;
+}
+
+footer #github {
+  color: black;
+}
+
+footer #github :hover {
+  opacity: 80%;
+}
+
+footer #linkedin {
+  color: #2c4e8d !important;
+}
+
+footer #linkedin :hover {
+  opacity: 80%;
+}
+
+#pt footer {
+  background-color: #ee9617;
+  background-image: linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
+}
+
+#en footer {
+  background-color: #537895;
+  background-image: linear-gradient(315deg, #25213d 0%, #09203f 74%);
+}
+
+#es footer {
+  background-color: #7f5a83;
+  background-image: linear-gradient(315deg, #423044 0%, #0d324d 74%);
+}
+
 @media only screen and (max-width: 600px) {
   header h1 {
     font-size: 58px !important;
@@ -239,7 +305,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Sora', sans-serif !important;
   overflow-x: hidden;
 }
 
@@ -258,6 +324,26 @@ body a:hover {
 body nav {
   -webkit-transition: top 0.4s !important;
   transition: top 0.4s !important;
+}
+
+.PP {
+  margin: 30px auto;
+  background-color: #e7e7e7;
+  border-radius: 40px;
+}
+
+.PP h1 {
+  padding: 15px auto;
+  text-align: center;
+}
+
+.PP h2 {
+  text-align: center;
+  padding: 10px auto;
+}
+
+.PP p {
+  margin: auto 10px;
 }
 
 main {

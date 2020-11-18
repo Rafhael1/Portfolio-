@@ -1,8 +1,19 @@
-<!DOCTYPE html>
-<html lang="es">
+<head>
+    <style>
+        body {
+            background-image: linear-gradient(to right, #34364e 0%, #2f3069 100%) !important;
+        }
 
-<%- include("../partials/headeres") %>
+        header {
+            background-image: url("backgrounds/image1.jpg") !important;
+        }
+    </style>
+</head>
+<body>
+<div id="es">
 
+<%- include("../partials/header") %>
+<%- include("../navs/navES") %>
     <header class=" center align-items-center justify-content-center text-center align-self-center ">
         <h1>RAFHAEL MARQUES</h1>
         <h2>DESARROLLADOR WEB</h2>
@@ -23,14 +34,8 @@
             <%- include("../cards/card1/cardES")  %> 
         </section>
     </main>
+    <%- include('../footer/footerES')  %> 
 
-    
-
-
-    <footer>         <!-- Links To My Social Media -->
-
-
-    </footer>
 </body>
 
 </html>
