@@ -33,6 +33,10 @@ app.get('/es', function(req, res){
       // GET RESUME PAGES//
 /////////////////////////////////
 
+app.get('/resume', function(req, res){
+  res.render('./resume/resumeEN')
+})
+
 
 ////////////////////////////////
 /////////////////////////////////
