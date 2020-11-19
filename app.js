@@ -14,10 +14,10 @@ app.set("view engine", "ejs");
 
 
 app.get('/', (req, res) => {
-  res.redirect('/home');
+  res.redirect('/en');
 });
 
-app.get("/home", function(req, res){
+app.get("/en", function(req, res){
     res.render("./home/home");   
 });
 
@@ -32,6 +32,10 @@ app.get('/es', function(req, res){
 /////////////////////////////////
       // GET RESUME PAGES//
 /////////////////////////////////
+
+app.get('/resume', function(req, res){
+  res.render('./resume/resumeEN')
+})
 
 
 ////////////////////////////////
