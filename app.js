@@ -52,4 +52,4 @@ app.get('/privacy-policy', function(req, res){
 const port = process.env.PORT || 3000
 app.listen(port, function(){
     console.log(`Server has started at http://localhost:${port}`)
-})
+  })
