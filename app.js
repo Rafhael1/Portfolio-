@@ -14,10 +14,10 @@ app.set("view engine", "ejs");
 
 
 app.get('/', (req, res) => {
-  res.redirect('/home');
+  res.redirect('/en');
 });
 
-app.get("/home", function(req, res){
+app.get("/en", function(req, res){
     res.render("./home/home");   
 });
 

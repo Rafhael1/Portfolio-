@@ -24,7 +24,8 @@ nav svg:hover {
 
 .nav-link {
   color: white !important;
-  font-size: 23px;
+  font-size: 19px;
+  margin-top: 5px;
 }
 
 .right-bar {
