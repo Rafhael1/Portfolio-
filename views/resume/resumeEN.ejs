@@ -1,21 +1,24 @@
 <head>
-    <style>
-        footer{
-            margin-bottom: -50px !important;
-        }
-    </style>
+  <style>
+    body {
+      background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    }
+    footer {
+      margin-bottom: -50px !important;
+    }
+  </style>
 </head>
+
 <body>
-    <div id="en">
+  <div id="en">
     <%- include("../partials/header") %>
     <%- include("../navs/nav") %>
 
-<div style="margin-bottom: 350px;" class="resume">
-    <!-- Download button -->   
-        <h1 style="text-align: center;">Rafhael Marques de Lima Freitas</h1>   
-    <hr>
-    <br>
-    <div class="container">
+    <div style="margin-top: 20px; margin-bottom: 50px;" class="resume">
+      <!-- Download button -->
+      <h1 style="text-align: center;">Rafhael Marques de Lima Freitas</h1>
+      <hr>
+      <br>
         <div class="row">
           <div class="col">
             <h2>Contact</h2>
@@ -29,45 +32,77 @@
             <h4>Business Manager</h4>
             <br>
             <h3>Freelance Designer & Translator</h3>
-            <h4>Designing social media posts and translating documents, texts, etc. From english to portuguese & vice-versa</h4>
+            <h4>Designing social media posts and translating documents, texts, etc. From english to portuguese &
+              vice-versa</h4>
           </div>
         </div>
         <div class="row">
-            <div class="col">
-              <h2>Education / Certifications</h2>
-              <h3>Web Developer Course - 2020</h3>
-              <h4>Full-Stack Web Development</h4>
-              <br>
-              <h3>Mises University - 2020</h3>
-              <h4>Economics</h4>
-              <br>
-              <h3>Stanford | Online - 2019</h3>
-              <h4>Principles of Economics</h4>
-              <br>
-              <h3>Ceped - 2019</h3>
-              <h4>Administrative Assistant</h4>
-            </div>
-            <div class="col">
-                <h2>Languages</h2>
-                <ul>
-                    <li>English - Fluent</li>
-                    <li>Portuguese - Native</li>
-                    <li>Spanish - Intermediate</li>
-                </ul>
-            </div>
+          <div class="col">
+            <h2>Education / Certifications</h2>
+            <h3>Web Developer Course - 2020</h3>
+            <h4>Full-Stack Web Development</h4>
+            <br>
+            <h3>Mises University - 2020</h3>
+            <h4>Economics</h4>
+            <br>
+            <h3>Stanford | Online - 2019</h3>
+            <h4>Principles of Economics</h4>
+            <br>
+            <h3>Ceped - 2019</h3>
+            <h4>Administrative Assistant</h4>
           </div>
-      </div>
+          <div class="col">
+            <h2>Languages</h2>
+            <ul>
+              <li>English - Fluent</li>
+              <li>Portuguese - Native</li>
+              <li>Spanish - Intermediate</li>
+            </ul>
+          </div>
+        </div>
       <div class="row">
         <div class="col">
           <h2>Front-end Frameworks & Languages</h2>
+          <ul>
+            <li>HTML w/ Bootstrap</li>
+            <li>CSS w/ SASS</li>
+            <li>JavaScript w/ JQuery, React.Js, EJS</li>
+            <li>Python</li>
+          </ul>
         </div>
         <div class="col">
-            <h2>Back-end Frameworks & Languages</h2>
+          <h2>Back-end Frameworks & Languages</h2>
+          <ul>
+            <li>Node.JS</li>
+            <li>Express.JS</li>
+            <li>Next.Js</li>
+            <li>MongoDB</li>
+          </ul>
         </div>
       </div>
-
-</div>
-    <%- include('../footer/footer')  %> 
+      <div class="row">
+        <div class="col">
+          <h2>Libraries, Dev. tools, Packages, etc.</h2>
+          <ul>
+            <li>Git</li>
+            <li>Github</li>
+            <li>Docker</li>
+            <li>Webpack</li>
+            <li>RESTful</li>
+            <li>API's</li>
+            <li>Postman</li>
+            <li>SemanticUI</li>
+            <li>Heroku</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h2>Projects</h2>
+          <a href="/projects">Projects Page</a>
+        </div>
+    </div>  
+    </div>
+    <%- include('../footer/footer')  %>
+ 
 </body>
 
 </html>
