@@ -37,6 +37,13 @@ app.get('/resume', function(req, res){
   res.render('./resume/resumeEN')
 })
 
+app.get('/curriculo', function(req, res){
+  res.render('./resume/resumePT')
+})
+
+app.get('/curriculum', function(req, res){
+  res.render('./resume/resumeES')
+})
 
 ////////////////////////////////
 /////////////////////////////////

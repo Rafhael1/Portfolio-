@@ -310,8 +310,6 @@ footer #linkedin :hover {
   color: white;
   border: 0px;
   border-radius: 35px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#0c3483), color-stop(100%, #a2b6df), color-stop(100%, #6b8cce), to(#a2b6df));
-  background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
   margin: 15px auto;
   padding: 10px;
 }
@@ -361,6 +359,19 @@ footer #linkedin :hover {
     text-align: center !important;
     padding-bottom: 15px !important;
   }
+}
+
+.resume h2 {
+  background-image: -webkit-gradient(linear, left top, right top, from(#243949), to(#517fa4));
+  background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+}
+
+.resumePT h2 {
+  background-image: linear-gradient(315deg, #fc9842 0%, #fe5f75 74%);
+}
+
+.resumeES h2 {
+  background-image: radial-gradient(circle farthest-corner at 3.3% 48.3%, #2c3c79 0%, #81519c 98.8%);
 }
 
 @media only screen and (max-width: 600px) {

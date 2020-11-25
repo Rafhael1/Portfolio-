@@ -25,7 +25,6 @@ $descripColor: rgba(59, 59, 59, 0.863);
         color: rgb(255, 255, 255);
         border: 0px;
         border-radius: 35px;
-        background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
         margin: 15px auto;
         padding: 10px;
     }
@@ -84,3 +83,23 @@ $descripColor: rgba(59, 59, 59, 0.863);
         }
     }
 }
+
+.resume {
+    h2 {
+        background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+    }
+}
+
+
+.resumePT {
+    h2 {
+        background-image: linear-gradient(315deg, #fc9842 0%, #fe5f75 74%);
+    }
+}
+
+.resumeES {
+    h2 {
+        background-image: radial-gradient( circle farthest-corner at 3.3% 48.3%,  rgba(44,60,121,1) 0%, rgba(129,81,156,1) 98.8% );
+    }
+}
+
