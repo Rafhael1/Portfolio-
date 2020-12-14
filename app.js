@@ -1,12 +1,16 @@
 const express = require("express");
 const app = express();
-var bodyParser = require("body-parser")
+const bodyParser = require("body-parser");
+const path = require('path');
+
 
 app.use(express.static("src/public"));
 
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.set("view engine", "ejs");
+app.set('views', path.join(__dirname, 'views'))
+
 
 //////////////////////////////////////
            // GET HOME PAGES//
@@ -52,6 +56,17 @@ app.get('/curriculum', function(req, res){
 
 app.get('/privacy-policy', function(req, res){
   res.render('./privacyPolicy')
+})
+
+////////////////////////////////
+
+////////////////////////////////
+/////////////////////////////////
+      // Contact Page //
+/////////////////////////////////
+
+app.get('/contact', function(req, res){
+  res.render('./contact/contactEN')
 })
 
 ////////////////////////////////

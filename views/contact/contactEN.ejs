@@ -1,0 +1,50 @@
+<body>
+  <div id="en">
+  <%- include("../partials/header") %>
+  <%- include("../navs/nav") %>
+  
+  <main class="container text-left mt-4">
+    <!-- Main Content -->
+    <section id="contact" class="container">
+        <h1 class="titleEN">Contact Me</h1>
+        <br>
+        <form id="my-form" action="https://formspree.io/f/xqkgynkl" method="POST">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input placeholder="Enter your first name" type="text" id="firstName" name="firstName">
+              </div>
+          
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input placeholder="Enter your last name" type="text" id="lastName" name="lastName">
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input placeholder="Enter the subject" type="text" id="subject" name="subject">
+              </div>
+          
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input placeholder="Enter your email" type="email" id="email" name="email">
+              </div>
+          
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea placeholder="Write your message" name="message" id="message" cols="30" rows="10"></textarea>
+              </div>
+          
+              <button name="submit" id="Submit" type="submit">Submit</button>
+        </form>
+        <p id="status"></p>
+        </section>
+  </main>
+  
+  <%- include('../footer/footer')  %> 
+  
+  <script src="../../contact.js"></script>
+  </body>
+  
+  </html>
+
+
