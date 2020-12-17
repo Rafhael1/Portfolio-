@@ -569,7 +569,8 @@ body {
 }
 
 body p {
-  font-size: 25px;
+  font-size: 23px;
+  letter-spacing: 1px;
 }
 
 body a {
