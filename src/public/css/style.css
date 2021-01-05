@@ -237,6 +237,7 @@ footer {
           box-shadow: 0px 0px 4px #2b2b2b;
   color: white;
   text-shadow: 0px 0px 3px black;
+  margin-bottom: 0 !important;
 }
 
 footer div {
@@ -405,31 +406,6 @@ footer #linkedin :hover {
   margin-top: 10px;
 }
 
-#contact button {
-  background-image: -webkit-gradient(linear, left top, right top, from(#2b5876), color-stop(51%, #4e4376), to(#2b5876));
-  background-image: linear-gradient(to right, #2b5876 0%, #4e4376 51%, #2b5876 100%);
-}
-
-#contact button {
-  margin: 10px;
-  padding: 15px 45px;
-  text-transform: uppercase;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: white;
-  -webkit-box-shadow: 0 0 20px #eee;
-          box-shadow: 0 0 20px #eee;
-  border-radius: 10px;
-}
-
-#contact button:hover {
-  background-position: right center;
-  /* change the direction of the change here */
-  color: #fff;
-  text-decoration: none;
-}
-
 #contact * {
   padding: 0;
   margin: 0;
@@ -541,6 +517,136 @@ footer #linkedin :hover {
     opacity: 0;
     pointer-events: none;
   }
+}
+
+#contact a {
+  font-size: 25px !important;
+  text-align: left;
+}
+
+#en #contact .btn {
+  background-image: -webkit-gradient(linear, left top, right top, from(#2b5876), color-stop(51%, #4e4376), to(#2b5876));
+  background-image: linear-gradient(to right, #2b5876 0%, #4e4376 51%, #2b5876 100%);
+}
+
+#en #contact .btn {
+  margin: 10px;
+  padding: 15px 45px;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  -webkit-box-shadow: 0 0 20px #eee;
+          box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+}
+
+#en #contact .btn:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+#pt #contact .btn {
+  background-image: -webkit-gradient(linear, left top, right top, from(#FF512F), color-stop(51%, #DD2476), to(#FF512F));
+  background-image: linear-gradient(to right, #FF512F 0%, #DD2476 51%, #FF512F 100%);
+}
+
+#pt #contact .btn {
+  margin: 10px;
+  padding: 15px 45px;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  -webkit-box-shadow: 0 0 20px #eee;
+          box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+}
+
+#pt #contact .btn:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+#es #contact .btn {
+  background-image: -webkit-gradient(linear, left top, right top, from(#2a516d), color-stop(51%, #332a53), to(#122635));
+  background-image: linear-gradient(to right, #2a516d 0%, #332a53 51%, #122635 100%);
+}
+
+#es #contact .btn {
+  margin: 10px;
+  padding: 15px 45px;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  -webkit-box-shadow: 0 0 20px #eee;
+          box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+}
+
+#es #contact .btn:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+#project-icon {
+  -webkit-transition: 250ms linear !important;
+  transition: 250ms linear !important;
+}
+
+#project-icon:hover {
+  /*transition: 50ms linear !important; */
+  color: #0f0f68 !important;
+  opacity: 85%;
+  font-size: 32px !important;
+}
+
+#projects .img-thumbnail {
+  height: 320px;
+  text-align: center;
+}
+
+#project-image {
+  width: 300px !important;
+  height: 200px !important;
+  border-radius: 10px;
+}
+
+#project-image-1 {
+  width: 130px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 325px) {
+  #project-image {
+    width: 100px !important;
+  }
+}
+
+@media only screen and (max-width: 618px) {
+  #project-image {
+    width: 100px !important;
+  }
+}
+
+.skills {
+  text-align: center !important;
+  margin: 0 150px;
+}
+
+.skills img {
+  padding: 10px 10px !important;
 }
 
 @media only screen and (max-width: 600px) {

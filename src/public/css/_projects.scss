@@ -1,0 +1,40 @@
+#project-icon {
+    transition: 250ms linear !important; 
+}
+
+#project-icon:hover {
+    /*transition: 50ms linear !important; */
+    color: rgb(15, 15, 104) !important;
+    opacity: 85%;
+    font-size: 32px !important;
+}
+
+#projects {
+    .img-thumbnail {
+        height: 320px;
+        text-align: center;
+    }
+}
+#project-image {
+    width: 300px !important;
+    height: 200px !important;
+    border-radius: 10px;
+}
+
+#project-image-1 {
+    width: 130px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 325px) {
+    #project-image {
+        width: 100px !important;
+    }
+}
+
+@media only screen and (max-width: 618px) {
+    #project-image {
+        width: 100px !important;
+    }
+}

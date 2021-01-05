@@ -70,6 +70,14 @@ app.get('/contact', function(req, res){
   res.render('./contact/contactEN')
 })
 
+app.get('/contato', function(req, res){
+  res.render('./contact/contactPT')
+})
+
+app.get('/contacto', function(req, res){
+  res.render('./contact/contactES')
+})
+
 ////////////////////////////////
 
 ////////////////////////////////
@@ -77,9 +85,6 @@ app.get('/contact', function(req, res){
       // Projects Page //
 /////////////////////////////////
 
-app.get('/projects', function(req, res){
-  res.render('./projects/projectsEN')
-})
 
 ////////////////////////////////
 

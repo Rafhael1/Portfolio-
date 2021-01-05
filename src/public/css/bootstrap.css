@@ -9990,7 +9990,7 @@ button.bg-dark:focus {
 }
 
 .text-left {
-  text-align: left !important;
+  text-align: center;
 }
 
 .text-right {
