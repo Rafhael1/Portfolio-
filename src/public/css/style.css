@@ -628,21 +628,14 @@ footer #linkedin :hover {
   border-radius: 10px;
 }
 
-@media only screen and (max-width: 325px) {
-  #project-image {
-    width: 100px !important;
-  }
-}
-
 @media only screen and (max-width: 618px) {
   #project-image {
-    width: 100px !important;
+    width: 250px !important;
   }
 }
 
 .skills {
   text-align: center !important;
-  margin: 0 150px;
 }
 
 .skills img {
