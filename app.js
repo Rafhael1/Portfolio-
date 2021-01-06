@@ -19,7 +19,7 @@ app.set('views', path.join(__dirname, 'views'))
 
 
 app.get('/', (req, res) => {
-  res.redirect('/en');
+  res.redirect('/pt');
 });
 
 app.get("/en", function(req, res){
@@ -82,7 +82,7 @@ app.get('/contacto', function(req, res){
 
 ////////////////////////////////
 /////////////////////////////////
-      // Projects Page //
+      //  //
 /////////////////////////////////
 
 
