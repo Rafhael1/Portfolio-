@@ -3,6 +3,10 @@
    
    img {
        padding: 10px 10px !important;
+       opacity: 80%;
+   }
+   img:hover {
+       opacity: 100%;
    }
 }
 

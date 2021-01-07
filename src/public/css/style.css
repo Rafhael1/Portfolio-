@@ -640,6 +640,11 @@ footer #linkedin :hover {
 
 .skills img {
   padding: 10px 10px !important;
+  opacity: 80%;
+}
+
+.skills img:hover {
+  opacity: 100%;
 }
 
 @media only screen and (max-width: 600px) {
