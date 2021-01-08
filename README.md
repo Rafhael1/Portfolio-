@@ -1,9 +1,14 @@
-# Portfolio-
+# Portfolio
 My portfolio website
 
 # Built with: 
-EJS
-SCSS
-Express
+- EJS
+------
+- SASS
+------
+- Express
+----------
+- Bootstrap
+------------
 
 
