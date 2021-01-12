@@ -8,7 +8,7 @@ const favicon = require('serve-favicon')
 app.use(express.static("src/public"));
 app.use('/static', express.static(path.join(__dirname, 'public')))
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(favicon(__dirname + '/src/public/imgs/icon.png'));
+app.use(favicon(__dirname + '/src/public/imgs/icon.ico'));
 
 
 app.set("view engine", "ejs");
