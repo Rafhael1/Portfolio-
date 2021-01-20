@@ -2,17 +2,32 @@
     transition: 250ms linear !important; 
 }
 
-#project-icon:hover {
+#en #project-icon:hover {
     /*transition: 50ms linear !important; */
-    color: rgb(15, 15, 104) !important;
+    color: rgb(63, 63, 223) !important;
     opacity: 85%;
     font-size: 32px !important;
 }
 
+#pt #project-icon:hover {
+    /*transition: 50ms linear !important; */
+    color: rgb(218, 32, 103) !important;
+    opacity: 85%;
+    font-size: 32px !important;
+}
+
+#es #project-icon:hover {
+    /*transition: 50ms linear !important; */
+    color: rgb(83, 72, 134) !important;
+    opacity: 85%;
+    font-size: 32px !important;
+}
+
+
 #projects {
     .img-thumbnail {
-        height: 320px;
-        text-align: center;
+        min-height: 320px;
+        text-align: center;  
     }
 }
 #project-image {
@@ -27,6 +42,92 @@
     border-radius: 10px;
 }
 
+#pt {
+    #projects {
+      
+      .btn {
+        background-image: linear-gradient(to right, #FF512F 0%, #DD2476  51%, #FF512F  100%)
+      }
+    
+      .btn {
+        margin: 10px;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        border-radius: 5px;
+      }
+    
+      .btn:hover {
+        background-position: right center;
+        /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+        box-shadow: 0 0 6px rgb(17, 17, 17);
+      }
+    
+      
+    }
+  }
+
+#en {
+    #projects {
+      
+      .btn {
+        background-image: linear-gradient(to right, #2b5876 0%, #4e4376 51%, #2b5876 100%)
+      }
+    
+      .btn {
+        margin: 10px;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        border-radius: 5px;
+      }
+    
+      .btn:hover {
+        background-position: right center;
+        /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+        box-shadow: 0 0 6px rgb(17, 17, 17);
+      }
+    
+      
+    }
+}
+
+#es {
+    #projects {
+      
+      .btn {
+        background-image: linear-gradient(to right, #14232e 0%, #584896 51%, #031829 100%)
+      }
+    
+      .btn {
+        margin: 10px;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        border-radius: 5px;
+      }
+    
+      .btn:hover {
+        background-position: right center;
+        /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+        box-shadow: 0 0 6px rgb(17, 17, 17);
+      }
+    
+      
+    }
+}
 
 @media only screen and (max-width: 618px) {
     #project-image {

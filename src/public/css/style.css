@@ -89,6 +89,13 @@ nav svg:hover {
   transition: transform 0s 1s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 1s, -webkit-transform 0s 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+.flags {
+  height: 20px;
+  width: 30px;
+  margin-right: 10px !important;
+  border-radius: 5px;
+}
+
 #es nav .brazil-flag {
   opacity: 50%;
 }
@@ -100,6 +107,8 @@ nav svg:hover {
 #es nav .spain-flag {
   height: 30px !important;
   width: 40px !important;
+  -webkit-box-shadow: 1px 2px 1px #1f1f1f;
+          box-shadow: 1px 2px 1px #1f1f1f;
 }
 
 #es nav .usa-flag {
@@ -121,6 +130,8 @@ nav svg:hover {
 #pt nav .brazil-flag {
   height: 30px !important;
   width: 40px !important;
+  -webkit-box-shadow: 1px 2px 1px #1f1f1f;
+          box-shadow: 1px 2px 1px #1f1f1f;
 }
 
 #pt nav .usa-flag {
@@ -142,6 +153,8 @@ nav svg:hover {
 #en nav .usa-flag {
   height: 30px !important;
   width: 40px !important;
+  -webkit-box-shadow: 1px 2px 1px #1f1f1f;
+          box-shadow: 1px 2px 1px #1f1f1f;
 }
 
 #en nav .brazil-flag {
@@ -256,19 +269,23 @@ footer h4 {
 }
 
 footer #github {
-  color: black;
+  color: black !important;
 }
 
-footer #github :hover {
+footer #github:hover {
   opacity: 80%;
+  -webkit-filter: drop-shadow(2px 2px 2px #383838);
+          filter: drop-shadow(2px 2px 2px #383838);
 }
 
 footer #linkedin {
   color: #2c4e8d !important;
 }
 
-footer #linkedin :hover {
+footer #linkedin:hover {
   opacity: 80%;
+  -webkit-filter: drop-shadow(2px 2px 2px #383838);
+          filter: drop-shadow(2px 2px 2px #383838);
 }
 
 #pt footer {
@@ -448,6 +465,10 @@ footer #linkedin :hover {
   margin-bottom: 20px;
 }
 
+#contact .alt {
+  display: inline-block;
+}
+
 #contact .form-group {
   width: 100%;
   margin-top: 20px;
@@ -522,6 +543,10 @@ footer #linkedin :hover {
 #contact a {
   font-size: 25px !important;
   text-align: left;
+}
+
+#contact i {
+  font-size: 23px;
 }
 
 #en #contact .btn {
@@ -604,15 +629,29 @@ footer #linkedin :hover {
   transition: 250ms linear !important;
 }
 
-#project-icon:hover {
+#en #project-icon:hover {
   /*transition: 50ms linear !important; */
-  color: #0f0f68 !important;
+  color: #3f3fdf !important;
+  opacity: 85%;
+  font-size: 32px !important;
+}
+
+#pt #project-icon:hover {
+  /*transition: 50ms linear !important; */
+  color: #da2067 !important;
+  opacity: 85%;
+  font-size: 32px !important;
+}
+
+#es #project-icon:hover {
+  /*transition: 50ms linear !important; */
+  color: #534886 !important;
   opacity: 85%;
   font-size: 32px !important;
 }
 
 #projects .img-thumbnail {
-  height: 320px;
+  min-height: 320px;
   text-align: center;
 }
 
@@ -626,6 +665,81 @@ footer #linkedin :hover {
   width: 130px;
   height: 200px;
   border-radius: 10px;
+}
+
+#pt #projects .btn {
+  background-image: -webkit-gradient(linear, left top, right top, from(#FF512F), color-stop(51%, #DD2476), to(#FF512F));
+  background-image: linear-gradient(to right, #FF512F 0%, #DD2476 51%, #FF512F 100%);
+}
+
+#pt #projects .btn {
+  margin: 10px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 5px;
+}
+
+#pt #projects .btn:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+  -webkit-box-shadow: 0 0 6px #111111;
+          box-shadow: 0 0 6px #111111;
+}
+
+#en #projects .btn {
+  background-image: -webkit-gradient(linear, left top, right top, from(#2b5876), color-stop(51%, #4e4376), to(#2b5876));
+  background-image: linear-gradient(to right, #2b5876 0%, #4e4376 51%, #2b5876 100%);
+}
+
+#en #projects .btn {
+  margin: 10px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 5px;
+}
+
+#en #projects .btn:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+  -webkit-box-shadow: 0 0 6px #111111;
+          box-shadow: 0 0 6px #111111;
+}
+
+#es #projects .btn {
+  background-image: -webkit-gradient(linear, left top, right top, from(#14232e), color-stop(51%, #584896), to(#031829));
+  background-image: linear-gradient(to right, #14232e 0%, #584896 51%, #031829 100%);
+}
+
+#es #projects .btn {
+  margin: 10px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 5px;
+}
+
+#es #projects .btn:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+  -webkit-box-shadow: 0 0 6px #111111;
+          box-shadow: 0 0 6px #111111;
 }
 
 @media only screen and (max-width: 618px) {
@@ -645,8 +759,42 @@ footer #linkedin :hover {
 
 .skills img:hover {
   opacity: 100%;
-  -webkit-filter: drop-shadow(2px 4px 6px #585858);
-          filter: drop-shadow(2px 4px 6px #585858);
+  -webkit-filter: drop-shadow(2px 3px 2px #585858);
+          filter: drop-shadow(2px 3px 2px #585858);
+}
+
+.stack-in-cards {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  float: left;
+  margin-right: 30px !important;
+  list-style-type: none;
+}
+
+.stack-in-cards li {
+  margin: auto 5px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px !important;
+  border: 0px;
+  -webkit-box-shadow: 0px 0px 3px 0px #202020;
+          box-shadow: 0px 0px 3px 0px #202020;
+  padding: 0 auto;
+}
+
+.card li {
+  text-align: center !important;
+}
+
+.card h3 {
+  text-align: center !important;
+  -ms-flex-line-pack: center !important;
+      align-content: center !important;
+  color: #000000;
+  text-shadow: 1px 1px 1px #202020;
 }
 
 @media only screen and (max-width: 600px) {
@@ -741,49 +889,5 @@ header h1 {
 
 header h2 {
   font-size: 50px;
-}
-
-.flags {
-  height: 20px;
-  width: 30px;
-  margin-right: 10px !important;
-  -webkit-box-shadow: 0px 0px 6px 1px #1f1f1f;
-          box-shadow: 0px 0px 6px 1px #1f1f1f;
-}
-
-.flags .flags:hover {
-  opacity: 80%;
-}
-
-.stack-in-cards {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  list-style-type: none;
-  margin: 4px -35px;
-}
-
-.stack-in-cards li {
-  margin: auto 5px;
-}
-
-.card {
-  background-color: white;
-  border-radius: 40px !important;
-  border: 0px;
-  -webkit-box-shadow: 0px 0px 5px 0px #202020;
-          box-shadow: 0px 0px 5px 0px #202020;
-}
-
-.card li {
-  color: #2b2b2b !important;
-}
-
-.card h3 {
-  text-align: center !important;
-  -ms-flex-line-pack: center !important;
-      align-content: center !important;
-  color: #000000;
-  text-shadow: 1px 1px 2px #202020;
 }
 /*# sourceMappingURL=style.css.map */

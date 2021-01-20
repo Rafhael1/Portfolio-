@@ -23,19 +23,19 @@ footer {
     }
 
     #github {
-        color: black;
-
-        :hover {
-            opacity: 80%;
-        }
+        color: black !important;
+    }
+    #github:hover{
+        opacity: 80%;
+        filter: drop-shadow(2px 2px 2px #383838);
     }
 
     #linkedin {
         color: rgb(44, 78, 141) !important;
-
-        :hover {
-            opacity: 80%;
-        }
+    }
+    #linkedin:hover {
+        opacity: 80%;
+        filter: drop-shadow(2px 2px 2px #383838);
     }
 }
 

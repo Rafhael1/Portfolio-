@@ -106,6 +106,15 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
 //////////////////////   FLAGS   //////////////////////////
 ////////////////////////////////////////////////////////// 
 
+
+.flags {
+    height: 20px;
+    width: 30px;
+    margin-right: 10px !important;
+    border-radius: 5px;
+  
+}
+
 #es {
     nav {
         .brazil-flag {
@@ -120,6 +129,7 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
         .spain-flag {
             height: 30px !important;
             width: 40px !important;
+            box-shadow: 1px 2px 1px rgb(31, 31, 31);
         }
 
         ////////////////////////////////
@@ -147,6 +157,7 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
         .brazil-flag {
             height: 30px !important;
             width: 40px !important;
+            box-shadow: 1px 2px 1px rgb(31, 31, 31);
         }
 
         /////////////////////////////
@@ -174,6 +185,7 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
         .usa-flag {
             height: 30px !important;
             width: 40px !important;
+            box-shadow: 1px 2px 1px rgb(31, 31, 31);
         }
 
         /////////////////////////////
@@ -186,3 +198,4 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
         }
     }
 }
+
