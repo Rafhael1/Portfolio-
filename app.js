@@ -21,7 +21,7 @@ app.set('views', path.join(__dirname, 'views'))
 
 
 app.get('/', (req, res) => {
-  res.redirect('/pt');
+  res.render('./home/homept');
 });
 
 app.get("/en", function(req, res){
